@@ -9,6 +9,14 @@ package Test;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(234234%10);
+        String admin = "1234567890";
+        System.out.println(admin.substring(2,9));
+    }
+
+    public static void changeIt(int [] number,int star,int end){
+        int mid = number[0];
+        int begin = star;
+        int finalNum = end;
+
     }
 }
