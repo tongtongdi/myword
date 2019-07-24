@@ -21,7 +21,6 @@ public class SyncInvoker {
         System.out.println("=============");
         System.out.println("do someThing else");
         Thread.sleep(1000);
-
         System.out.println("=============");
     }
     private static String get() throws InterruptedException{
