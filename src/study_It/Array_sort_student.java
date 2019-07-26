@@ -14,7 +14,7 @@ public class Array_sort_student {
     public static void main(String[] args) {
         int[] a = new int[]{12, 3, 2, 23, 23, 2, 3, 2, 3, 2, 2, 4, 575,};
         changeIt(0, 1, a);
-        Arrays.toString(a);
+        System.out.println(Arrays.toString(a));
     }
 
     public static void changeIt(int left,int right,int[] a){

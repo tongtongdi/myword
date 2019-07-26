@@ -13,7 +13,7 @@ public class Main {
         String b = "abc";
         String d = "ab" + "c";
         String c = new String("abc");
-        System.out.println(a == d);
+        System.out.println((10-1)/2);
 
 
     }

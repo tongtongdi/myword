@@ -9,8 +9,9 @@ package Test;
 
 public class Main {
     public static void main(String[] args) {
-        String admin = "1234567890";
-        System.out.println(admin.substring(2,9));
+
+        String number = "0123456789";
+        System.out.println(number.substring(1,number.length()-1));
     }
 
     public static void changeIt(int [] number,int star,int end){
