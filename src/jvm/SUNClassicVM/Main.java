@@ -13,7 +13,9 @@ public class Main {
         String b = "abc";
         String d = "ab" + "c";
         String c = new String("abc");
-        System.out.println((10-1)/2);
+        int n = Integer.valueOf("");
+        System.out.println(n);
+        System.out.println(a.substring(1));
 
 
     }
