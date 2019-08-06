@@ -20,7 +20,7 @@ public class problem_25 {
         tou.next = d;
         int i = 0;
 
-        int k = 0;
+        int q = 0;
         ListNode start = head;
         while (h != null) {
             i++;
@@ -37,11 +37,11 @@ public class problem_25 {
                 d= e;
                 h = start = t;
                 i=0;
-                k = 1;
+                q = 1;
             }
         }
         if (i != 0) {
-            if(k==0) return head;
+            if(q==0) return head;
             e.next = start;
         }
         return tou.next.next;
@@ -61,7 +61,7 @@ public class problem_25 {
     }
 
     public static void main(String[] args) {
-        ListNode list = Util.makeListNode(new int[]{1});
-        Util.listPrint(reverseKGroup(list, 2));
+        ListNode list = Util.makeListNode(new int[]{1,2,3,4,5,6,7,8,10,11,12,13,14,15,16,17});
+        Util.listPrint(reverseKGroup(list, 3));
     }
 }
