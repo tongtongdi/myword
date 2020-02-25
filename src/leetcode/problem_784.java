@@ -18,21 +18,21 @@ public class problem_784 {
         return list;
     }
     public static void findMesage(char[] s,int i,List<String> res){
-        if(i==s.length-1){
-            res.add(s.toString());
+        if(i==s.length){
+            res.add(String.valueOf(s));
+            return ;
         }
         findMesage(s,i+1,res);
-        if (s[i] < '0' && s[i] > '9') {
+        if (s[i] < '0' || s[i] > '9') {
             s[i] ^= 32;
             findMesage(s, i + 1, res);
-            s[i] ^= 32;
         }
     }
 
     public static void main(String[] args) {
-        String number = "a1b2";
-        letterCasePermutation(number).toString();
-        for(String s:letterCasePermutation(number)){
+        String number = "a1sdfsb2";
+        List<String> list = letterCasePermutation(number);
+        for(String s:list){
             System.out.print(s+",");
         }
         System.out.println();
