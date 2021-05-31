@@ -8,6 +8,7 @@ import java.util.concurrent.ConcurrentSkipListSet;
 public class mingmingdesuijishu {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        StringBuffer string = new StringBuffer();
 
         while (input.hasNext()){
             int max = input.nextInt();
