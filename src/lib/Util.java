@@ -14,10 +14,10 @@ public class Util {
         }
         ListNode list = new ListNode(arrys[0]);
         ListNode head = list;
-        for(int i=1;i<arrys.length;i++){
+        for(int i=1;i<arrys.length;i++) {
             ListNode next = new ListNode(arrys[i]);
             list.next = next;
-            list = next;
+            list = list.next;
         }
         return head;
     }
